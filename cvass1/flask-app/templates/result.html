@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Diameter Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ecf0f1; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #3498db; /* Blue heading color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #e67e22; /* Orange button color */
+            color: #fff; /* White button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Remove default link underline */
+        }
+
+        .btn:hover {
+            background-color: #d35400; /* Darker orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Circle Diameter Result</h1>
+        <p>The calculated diameter is: {{ diameter }} cm</p>
+        <img src="{{ url_for('static', filename='uploads/result_image.jpg') }}" alt="Result Image">
+        <br>
+        <a href="#" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
