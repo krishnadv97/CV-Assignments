@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Assignment-4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: linear-gradient(135deg, #6b2be4, #f22e3d);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: scale-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+
+        .title {
+            color: #ffffff; /* Purple color for titles */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #video-container-1 {
+            max-width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Object Tracking, Recognition & Dimensions Calculation</h1>
+        <h2 class="title">Streaming</h2>
+        <div id="video-container-1">
+            <img src="{{ url_for('video_stream') }}" class="video" alt="Video Stream">
+        </div>
+    </div>
+</body>
+</html>
